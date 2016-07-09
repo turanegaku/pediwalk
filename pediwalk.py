@@ -100,7 +100,7 @@ def main(start, goal):
 
 
 if __name__ == '__main__':
-    if (len(sys.argv) < 3):
-        print('Usage: python %s [from] [to]' % sys.argv[0])
+    if len(sys.argv) < 3:
+        print('Usage: $ python %s [start] [goal]' % sys.argv[0])
         sys.exit(1)
     main(start=sys.argv[1], goal=sys.argv[2])
